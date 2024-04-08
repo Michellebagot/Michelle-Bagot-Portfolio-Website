@@ -1,11 +1,12 @@
 import CTA from "../CTA/CTA"
+import './intro.css'
 
 const Intro = () => {
 
     return(
         <>
         <h2>Hey!</h2>
-        <p>I'm Michelle, {<CTA />}</p>
+        <p className="inlineParagraph">I'm Michelle, {<CTA />}</p>
         
         </>
     )

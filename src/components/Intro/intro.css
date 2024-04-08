@@ -1,0 +1,10 @@
+
+.inlineParagraph {
+    display: inline-flex;  
+    align-items: center;   
+}
+
+.inlineParagraph p { 
+    margin: 0; 
+    padding: 0 5px;  
+}
