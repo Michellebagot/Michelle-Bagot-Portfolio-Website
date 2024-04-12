@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import React from 'react'
 import AboutMe from './components/AboutMe/AboutMe'
 import NavBar from './components/NavigationBar/NavigationBar'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -14,10 +15,9 @@ function App() {
 <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about-me" element={<AboutMe />} />
-      
-
-
 </Routes>
+
+<Footer className="footer--pin" />
     </>
   )
 }

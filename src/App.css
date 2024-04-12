@@ -11,3 +11,14 @@
 body {
   font-family: "Comfortaa", sans-serif;
 }
+
+
+.content-container {
+    min-height: calc(100vh - 120px);  /*height of footer*/
+  }
+
+.footer--pin {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }

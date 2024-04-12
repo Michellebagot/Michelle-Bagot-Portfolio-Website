@@ -1,0 +1,20 @@
+.githubIcon {
+    /* width: 1000px; */
+}
+
+
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+    padding: 10px;
+    background-color: rgb(2, 2, 29);
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* bottom: 10px; */
+    /* position: absolute; */
+    /* width: 100%; */
+
+}
