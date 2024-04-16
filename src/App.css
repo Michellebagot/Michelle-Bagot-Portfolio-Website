@@ -10,15 +10,14 @@
 
 body {
   font-family: "Comfortaa", sans-serif;
+
+  background-color: white;
+  height: 100dvh;
 }
 
 
-.content-container {
-    min-height: calc(100vh - 120px);  /*height of footer*/
-  }
-
-.footer--pin {
-    position: relative;
+.footerComponent{
     left: 0;
-    bottom: 0;
+    position: absolute;
+    background-color: #81d4fa;
   }

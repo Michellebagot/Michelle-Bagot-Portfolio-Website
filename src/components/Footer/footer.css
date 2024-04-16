@@ -1,20 +1,21 @@
-.githubIcon {
-    /* width: 1000px; */
-}
-
-
-
 .footerContainer {
     display: flex;
     justify-content: space-between;
     align-items: self-end;
     padding: 10px;
-    background-color: rgb(2, 2, 29);
+    background-color: #0d1b2a;
     color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    /* bottom: 10px; */
-    /* position: absolute; */
-    /* width: 100%; */
+    border-radius: 0 10px 10px 0;
+    border-left: #d30c7b solid 10px;
+}
+
+.socialIconsContainer{
+    position: absolute;
+    right: 10px;
+}
+
+.socialIconsFooter {
+    margin-left: 10px;
+    margin-right: 10px;
 
 }

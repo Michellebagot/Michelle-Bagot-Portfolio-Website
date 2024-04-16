@@ -17,7 +17,7 @@ function App() {
       <Route path="/about-me" element={<AboutMe />} />
 </Routes>
 
-<Footer className="footer--pin" />
+<Footer className="footerComponent" />
     </>
   )
 }
