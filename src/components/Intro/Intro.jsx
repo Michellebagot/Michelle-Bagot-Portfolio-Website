@@ -4,7 +4,7 @@ import "./intro.css";
 const Intro = () => {
   return (
     <>
-      <div className="cardContainer">
+      <div className="introCardContainer">
         <div className="headshotDiv">
           <img
             src="./assets/MB-headshot.jpg"
