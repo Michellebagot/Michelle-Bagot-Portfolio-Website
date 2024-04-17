@@ -1,0 +1,23 @@
+[
+    {
+      "title": "GoTrail",
+      "duration": "Mar - Apr 2024",
+      "description": "Successfully collaborated on a mobile app project, merging hiking tracking with engaging gamification features. Demonstrated proficiency in Flutter and Firebase technologies. Effectively integrated map functionalities, GPS tracking, and robust user authentication systems to deliver a smooth and immersive user experience. Operated within an agile framework, ensuring effective collaboration and project progression.",
+      "technologies": ["Flutter", "Firebase", "Maps", "GPS", "Authentication", "Agile"],
+      "githubLink": "https://github.com/Michellebagot/GoTrail"
+    },
+    {
+      "title": "Northcoders News Front-End Project",
+      "duration": "Mar 2024",
+      "description": "Successfully developed a React.js single-page application (SPA) front-end for a news app replicating Reddit’s functionality, utilising URL endpoints for routing. Implemented functionalities for article display, voting (up/down), and commenting, ensuring a smooth user interaction flow. Effectively handled complex data sorting and filtering received from the backend API, overcoming obstacles in direct API sorting. Leveraged React's component-based architecture to maintain code organisation and reusability. Deployed the application to Netlify to demonstrate the application and its functionality.",
+      "technologies": ["React.js", "Single-Page Application (SPA)", "Routing", "API Integration", "Data Sorting & Filtering", "Component-Based Architecture", "Netlify"],
+      "githubLink": "https://github.com/Michellebagot/fe-nc-news"
+    },
+    {
+      "title": "Northcoders News Back-End Project",
+      "duration": "Feb 2024",
+      "description": "Successfully built a RESTful API in JavaScript replicating a news app backend, utilising Node.js, Express.js, and PostgreSQL. Implemented CRUD operations for articles and comments whilst using best practices like TDD (Test Driven Development) and version control with Git. Successfully hosted the application for public access, gaining valuable experience in deployment. Learned to handle complex queries through effective data manipulation and filtering techniques. Encountered obstacles within environment variables requiring collaboration to effectively resolve.",
+      "technologies": ["JavaScript", "RESTful API", "Node.js", "Express.js", "PostgreSQL", "CRUD", "TDD", "Git", "Deployment", "Data Manipulation & Filtering"],
+      "githubLink": "https://github.com/Michellebagot/GoTrail"
+    }
+  ]

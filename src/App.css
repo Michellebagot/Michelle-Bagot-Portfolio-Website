@@ -8,14 +8,34 @@
       format("woff2");
 }
 
+
+
 body {
   font-family: "Comfortaa", sans-serif;
-
   background-color: white;
-  height: 100dvh;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
 }
 
-
+@media (min-width: 1280px)
+{
+  body {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.cardComponent{
+  display: flex;
+  justify-content: space-between;
+  align-items: self-end;
+  padding: 10px;
+  background-color: #0d1b2a;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  border-left: #d30c7b solid 10px;
+}
 .footerComponent{
     left: 0;
     position: absolute;

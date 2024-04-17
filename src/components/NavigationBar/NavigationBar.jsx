@@ -6,27 +6,24 @@ import "./navigationBar.css";
 const NavBar = () => {
   return (
     <div className="header-card">
-      {/* <div className="headshot">
-                <img src="./public/assets/MB-headshot.jpg" alt="Michelle Bagot - Headshot" width='100px' />
-            </div> */}
       <div className="header-content">
-        <h1>Michelle Bagot</h1>
-        <h2>Junior Software Engineer</h2>
+        <h1><a href='/'>Michelle Bagot</a></h1>
+        <h2>Junior Software Developer</h2>
       </div>
       <div className="header-nav">
         <nav>
           <ul>
             <li>
-              <a href="#about-me">About Me</a>
+              <a href="about-me">About Me</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="projects">Projects</a>
             </li>
             <li>
-              <a href="#contact">Resume</a>
+              <a href="resume">Resume</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="contact">Contact</a>
             </li>
           </ul>
         </nav>

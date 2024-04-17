@@ -5,8 +5,8 @@
   padding: 10px;
   background-color: #0d1b2a;
   color: white;
-  border-radius: 0 10px 10px 0;
-  border-left: #d30c7b solid 10px;
+  border-radius:  10px 0 0 10px; 
+  border-right: #d30c7b solid 10px;
 }
 
 img {
@@ -49,6 +49,11 @@ nav li {
 }
 
 nav a {
+  text-decoration: none;
+  color: white;
+}
+
+a {
   text-decoration: none;
   color: white;
 }
