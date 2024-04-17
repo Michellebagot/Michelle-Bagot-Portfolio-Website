@@ -8,3 +8,33 @@
     margin: 0; 
     padding: 0 5px;  
 }
+
+.introCardContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #0d1b2a;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    border-left: #d30c7b solid 10px;
+    display: inline-flex;
+}
+
+.headshotImg {
+    display: inline-block;
+    width: 200px;
+    border-radius: 50%;
+    border: #d30c7b solid 10px;
+}
+
+.headshotDiv {
+    display: inline-block;
+    margin: 10px;
+    align-items: center;
+}
+
+.introTextDiv {
+    display: inline-block;
+    margin-left: 25px;
+    vertical-align: top;
+}

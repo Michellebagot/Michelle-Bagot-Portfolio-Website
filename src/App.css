@@ -26,6 +26,7 @@ body {
     margin-right: auto;
   }
 }
+
 .cardComponent{
   display: flex;
   justify-content: space-between;
@@ -36,6 +37,7 @@ body {
   border-radius: 0 10px 10px 0;
   border-left: #d30c7b solid 10px;
 }
+
 .footerComponent{
     left: 0;
     position: absolute;
