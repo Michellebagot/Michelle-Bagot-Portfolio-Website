@@ -26,5 +26,3 @@ function App() {
 }
 
 export default App;
-
-// TODO add width adjustment for pages over xxx pixels wide

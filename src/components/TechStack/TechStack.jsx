@@ -4,13 +4,8 @@ import "./techStack.css";
 const TechStack = () => {
   return (
     <>
-      <div className="cardContainer">
+      <section className="cardContainer">
         <h2>Tech Stack</h2>
-        <p>
-          These are the techologies that I have used, and how confident I feel
-          using them.
-        </p>
-        <div>
           {techData.map((tech) => (
             <div key={tech.title}>
               <h3>{tech.title}</h3>
@@ -24,27 +19,13 @@ const TechStack = () => {
                       <li>
                         <h4 className="techTitle">{skill.name}</h4>
                       </li>
-                      <li>
-                        <p className="techTitle">Level: {skill.level}</p>
-                      </li>
                     </li>
                   ))}
                 </div>
               </ul>
             </div>
           ))}
-        </div>
-        <div>
-          <h3>My Ranking System</h3>
-          <ul>
-            <li>Level 5 - Senior Developer</li>
-            <li>Level 4 - Confident Developer</li>
-            <li>Level 3 - Junior Developer</li>
-            <li>Level 2 - "Straight outta bootcamp" Developer</li>
-            <li>Level 1 - Newbie Developer</li>
-          </ul>
-        </div>
-      </div>
+      </section>
     </>
   );
 };

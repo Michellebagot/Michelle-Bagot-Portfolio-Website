@@ -4,33 +4,27 @@
       "skills": [
         {
           "name": "HTML",
-          "level": 3,
-          "icon" : "../assets/icons/html5-original.svg"
+          "icon" : "../icons/html5.svg"
         },
         {
           "name": "CSS",
-          "level": 3,
-          "icon" : "../assets/icons/css3-original.svg"
+          "icon" : "../icons/css3.svg"
         },
         {
           "name": "JavaScript",
-          "level": 4,
-          "icon" : "../assets/icons/javascript-original.svg"
+          "icon" : "../icons/javascript.svg"
         },
         {
           "name": "React",
-          "level": 3,
-          "icon" : "../assets/icons/react-original.svg"
+          "icon" : "../icons/react.svg"
         },
         {
             "name": "Axios",
-            "level": 3,
-            "icon" : "../assets/icons/axios-plain.svg"
+            "icon" : "../icons/axios.svg"
           },
           {
             "name": "Flutter",
-            "level": 2,
-            "icon" : "../assets/icons/flutter-original.svg"
+            "icon" : "../icons/flutter.svg"
           }
       ]
     },
@@ -39,28 +33,23 @@
       "skills": [
         {
           "name": "Node.js",
-          "level": 3,
-          "icon" : "../assets/icons/nodejs-original.svg"
+          "icon" : "../icons/nodejs.svg"
         },
         {
           "name": "npm",
-          "level": 3,
-          "icon" : "../assets/icons/npm-original-wordmark.svg"
+          "icon" : "../icons/npm.svg"
         },
         {
           "name": "PostgreSQL",
-          "level": 3,
-          "icon" : "../assets/icons/postgresql-original.svg"
+          "icon" : "../icons/postgresql.svg"
         },
         {
             "name": "Express",
-            "level": 3,
-            "icon" : "../assets/icons/express-original.svg"
+            "icon" : "../icons/express.svg"
           },
           {
             "name": "Firebase",
-            "level": 2,
-            "icon" : "../assets/icons/firebase-original.svg"
+            "icon" : "../icons/firebase.svg"
           }
       ]
     },
@@ -69,33 +58,27 @@
         "skills": [
           {
             "name": "Jest",
-            "level": 3,
-            "icon" : "../assets/icons/jest-plain.svg"
+            "icon" : "../icons/jest.svg"
           },
           {
             "name": "Git",
-            "level": 3,
-            "icon" : "../assets/icons/git-original.svg"
+            "icon" : "../icons/git.svg"
           },
           {
             "name": "GitHub",
-            "level": 3,
-            "icon" : "../assets/icons/github-original.svg"
+            "icon" : "../icons/github.svg"
           },
           {
             "name": "Figma",
-            "level": 3,
-            "icon" : "../assets/icons/figma-original.svg"
+            "icon" : "../icons/figma.svg"
           },
           {
             "name": "VSCode",
-            "level": 3,
-            "icon" : "../assets/icons/vscode-original.svg"
+            "icon" : "../icons/vscode.svg"
           },
           {
             "name": "Postman",
-            "level": 2,
-            "icon" : "../assets/icons/postman-original.svg"
+            "icon" : "../icons/postman.svg"
           }
         ]
       }

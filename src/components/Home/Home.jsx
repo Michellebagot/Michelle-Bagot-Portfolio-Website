@@ -1,11 +1,11 @@
-import CTA from "../CTA/CTA";
 import Intro from "../Intro/Intro";
+import TechStack from "../TechStack/TechStack";
 
 const Home = () => {
   return (
     <>
-      <h1>Hi! Welcome To My Page!</h1>
       <Intro/>
+      <TechStack />
     
     </>
   );
