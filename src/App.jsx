@@ -7,6 +7,8 @@ import NavBar from "./components/NavigationBar/NavigationBar";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import TechStack from "./components/TechStack/TechStack";
+import ProjectCard from "./components/ProjectCard/ProjectCard";
+import ProjectCardExt from "./components/ProjectCardExt/ProjectCardExt";
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/techStack" element={<TechStack />} />
+        <Route path="/projects/:project_name" element={<ProjectCardExt />} />
       </Routes>
 
       <Footer className="footerComponent" />
