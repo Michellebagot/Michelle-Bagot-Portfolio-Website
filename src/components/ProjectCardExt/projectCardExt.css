@@ -1,0 +1,62 @@
+li {
+    list-style-type: none;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+
+.cardContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #0d1b2a;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    border-left: #d30c7b solid 10px;
+}
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); 
+    grid-gap: 15px;
+    justify-items: center;
+  }
+
+  .iconContainer {
+    background-color: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .techTitle {
+    text-align: center;
+  }
+
+  a {
+    color: white;
+  }
+
+  .linkButton {
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+  }
+
+  .githubLogo {
+    display: inline;
+    align-items: center;
+    margin-right: 10px;
+  }

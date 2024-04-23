@@ -3,6 +3,7 @@
       "id" : 3,
       "title": "GoTrail",
       "urlTitle" : "GoTrail",
+      "type" : "Multiplatform Mobile App",
       "duration": "Mar - Apr 2024",
       "abstract" : "This is an abstract",
       "description": "Successfully collaborated on a mobile app project, merging hiking tracking with engaging gamification features. Demonstrated proficiency in Flutter and Firebase technologies. Effectively integrated map functionalities, GPS tracking, and robust user authentication systems to deliver a smooth and immersive user experience. Operated within an agile framework, ensuring effective collaboration and project progression.",
@@ -16,16 +17,8 @@
         "icon" : "../icons/dart.svg"
       },
       {
-        "name": "CSS",
-        "icon" : "../icons/css3.svg"
-      },
-      {
         "name": "Firebase",
         "icon" : "../icons/firebase.svg"
-      },
-      {
-        "name": "Firestore",
-        "icon" : "../icons/firestore.svg"
       }
     ],
       "technologies": ["Git", "Github", "Slack", "Netlify"],
@@ -58,7 +51,7 @@
       },
       {
         "name": "Axios",
-        "icon" : "../icons/Axios.svg"
+        "icon" : "../icons/axios.svg"
       }
     ],
       "technologies": ["Git", "Github", "Lighthouse", "Netlify"],
@@ -92,7 +85,7 @@
       },
       {
         "name": "Axios",
-        "icon" : "../icons/Axios.svg"
+        "icon" : "../icons/axios.svg"
       }
     ],
       "technologies": ["Git", "Github", "Lighthouse", "Netlify"],

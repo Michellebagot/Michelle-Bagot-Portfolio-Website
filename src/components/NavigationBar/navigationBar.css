@@ -22,6 +22,10 @@ img {
   text-align: left;
 }
 
+.header-content a {
+  display: inline-block;
+}
+
 .header-content h1,
 .header-content h2 {
   margin: 0.5rem 0;

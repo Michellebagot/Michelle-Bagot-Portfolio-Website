@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./navigationBar.css";
 
 //TODO unsure on headshot in header bar here.
@@ -7,8 +8,13 @@ const NavBar = () => {
   return (
     <div className="header-card">
       <div className="header-content">
-        <h1><a href='/'>Michelle Bagot</a></h1>
+        <Link to={'/'}>
+          <span>
+
+        <h1>Michelle Bagot</h1>
         <h2>Junior Software Developer</h2>
+          </span>
+        </Link>
       </div>
       <div className="header-nav">
         <nav>

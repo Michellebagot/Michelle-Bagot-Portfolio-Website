@@ -1,4 +1,3 @@
-import projectData from "../Projects/projects.json";
 
 const ProjectCard = ({project}) => {
 

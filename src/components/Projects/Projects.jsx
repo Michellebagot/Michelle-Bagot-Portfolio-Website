@@ -16,7 +16,7 @@ const [selectedProject, setSelectedProject] = useState("")
       {projectData.map((project) => (
      
               <Link to={`/projects/${project.urlTitle}`} key={project.title}>
-                <ProjectCard project={project} key={project.title} />
+                <ProjectCard project={project} />
             </Link>
     ))}
     </ul>

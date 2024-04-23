@@ -6,8 +6,6 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import NavBar from "./components/NavigationBar/NavigationBar";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
-import TechStack from "./components/TechStack/TechStack";
-import ProjectCard from "./components/ProjectCard/ProjectCard";
 import ProjectCardExt from "./components/ProjectCardExt/ProjectCardExt";
 
 function App() {
