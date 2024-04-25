@@ -5,9 +5,14 @@
       "urlTitle" : "GoTrail",
       "type" : "Multiplatform Mobile App",
       "duration": "Mar - Apr 2024",
-      "abstract" : "This is an abstract",
-      "description": "Successfully collaborated on a mobile app project, merging hiking tracking with engaging gamification features. Demonstrated proficiency in Flutter and Firebase technologies. Effectively integrated map functionalities, GPS tracking, and robust user authentication systems to deliver a smooth and immersive user experience. Operated within an agile framework, ensuring effective collaboration and project progression.",
-      "obstacles" : "these are obstacles",
+      "abstract" : "This collaborative mobile app project merged real-time GPS tracking with gamification features to create an engaging hiking experience, utilising Flutter for development and Firebase for backend services.",
+      "description": [
+        "Successfully collaborated on a mobile app project, merging hiking tracking with engaging gamification features.", 
+        "Demonstrated proficiency in Flutter and Firebase technologies.", 
+        "Effectively integrated map functionalities, GPS tracking, and robust user authentication systems to deliver a smooth and immersive user experience.", 
+        "Operated within an agile framework, ensuring effective collaboration and project progression."
+      ],
+      "obstacles" : "Overcame a steep learning curve in Flutter & Firebase through collaborative learning (tutorials & pair programming). Faced an issue with accessing trail databases resulting in us securing a curated set of trail data via manual import",
       "languages" : [ {
         "name": "Flutter",
         "icon" : "../icons/flutter.svg"
@@ -21,9 +26,21 @@
         "icon" : "../icons/firebase.svg"
       }
     ],
-      "technologies": ["Git", "Github", "Slack", "Netlify"],
-      "skills" : ["API integration", "Data Sorting & Filtering", "Mobile Platform Development", "Component-Based Architecture", "Authentication", "Maps", "Geolocation", "Agile Methodologies"],
-      "githubLink": "https://github.com/Michellebagot/GoTrail"
+    "tools" : [  {
+      "name": "VS Code",
+      "icon" : "../icons/vscode.svg"
+    },
+    {
+      "name": "Slack",
+      "icon" : "../icons/slack.svg"
+    },
+    {
+      "name": "Github",
+      "icon" : "../icons/github.svg"
+    }],
+      "skills" : ["Data Sorting & Filtering", "Agile Methodologies", "Mobile Platform Development", "Component-Based Architecture", "Authentication", "Maps", "Geolocation"],
+      "githubLink": "https://github.com/Michellebagot/GoTrail",
+      "demoLink" : "https://northcoders.com/project-phase/gotrail"
     },
     {
       "id" : 2,
@@ -56,7 +73,8 @@
     ],
       "technologies": ["Git", "Github", "Lighthouse", "Netlify"],
       "skills" : ["Routing", "API integration", "Data Sorting & Filtering", "Single-Page Application (SPA)", "Component-Based Architecture"],
-      "githubLink": "https://github.com/Michellebagot/fe-nc-news"
+      "githubLink": "https://github.com/Michellebagot/fe-nc-news",
+      "demoLink" : "https://northcoders.com/project-phase/gotrail"
     },
     {
       "id" : 1,
@@ -90,6 +108,7 @@
     ],
       "technologies": ["Git", "Github", "Lighthouse", "Netlify"],
       "skills" : ["Routing", "API integration", "Data Sorting & Filtering", "Single-Page Application (SPA)", "Component-Based Architecture"],
-      "githubLink": "https://github.com/Michellebagot/GoTrail"
+      "githubLink": "https://github.com/Michellebagot/GoTrail",
+      "demoLink" : "https://northcoders.com/project-phase/gotrail"
     }
   ]
