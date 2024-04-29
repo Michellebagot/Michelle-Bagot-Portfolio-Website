@@ -1,0 +1,23 @@
+.menu-nav {
+    margin-top: -10px;
+    margin-bottom: -15px;
+}
+
+.menu-ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.menu-li {
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+
+.menu-link:hover {
+    color: #d30c7b 
+}

@@ -5,8 +5,8 @@ const Intro = () => {
   const adjectives = [
     "A Problem-Solver",
     "A Code Crafter",
-    "A Software Developer",
-    "A Team Player",
+    "A Junior Software Developer",
+    "An Enthusiastic Collaborator",
     "An Innovative Thinker",
     "User Focused",
     "A Lifelong Learner",
