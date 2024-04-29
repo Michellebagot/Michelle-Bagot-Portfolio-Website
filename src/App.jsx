@@ -7,6 +7,7 @@ import NavBar from "./components/NavigationBar/NavigationBar";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import ProjectCardExt from "./components/ProjectCardExt/ProjectCardExt";
+import ComingSoon from "./components/ComingSoon/ComingSoon";
 
 function App() {
   return (
@@ -15,9 +16,11 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about-me" element={<AboutMe />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/about-me" element={<ComingSoon />} />
+        <Route path="/projects" element={<ComingSoon />} />
         <Route path="/projects/:project_name" element={<ProjectCardExt />} />
+        <Route path="/contact" element={<ComingSoon />} />
+        <Route path="/resume" element={<ComingSoon />} />
       </Routes>
 
       <Footer className="footerComponent" />

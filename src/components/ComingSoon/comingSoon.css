@@ -1,0 +1,13 @@
+.comingSoonContainer {
+  background-color: #0d1b2a;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  border: solid #d30c7b 10px;
+  margin-bottom: 10px;
+}
+
+.roadworks {
+  margin-bottom: 10px;
+  height: 100px
+}
