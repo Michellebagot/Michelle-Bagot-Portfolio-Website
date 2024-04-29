@@ -9,21 +9,9 @@
   border-right: #d30c7b solid 10px;
 }
 
-img {
-  border-radius: 10px;
-}
-
-.headshot {
-  padding-right: 10px;
-}
-
 .header-content {
   flex: 1;
   text-align: left;
-}
-
-.header-content a {
-  display: inline-block;
 }
 
 .header-content h1,
@@ -36,8 +24,11 @@ img {
 }
 
 .header-nav {
-  align-items: end;
   margin: 0.5rem 0;
+  position: relative;
+  padding-bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
 }
 
 nav ul {
@@ -52,12 +43,3 @@ nav li {
   margin-right: 1rem;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}

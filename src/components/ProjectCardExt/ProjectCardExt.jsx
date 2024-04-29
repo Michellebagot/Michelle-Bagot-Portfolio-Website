@@ -3,7 +3,6 @@ import projects from "../Projects/projects.json";
 import { useState } from "react";
 import "./projectCardExt.css";
 import { Link } from "react-router-dom";
-import { SocialIcon } from "react-social-icons";
 
 const ProjectCardExt = () => {
   const { project_name } = useParams();
@@ -23,7 +22,10 @@ const ProjectCardExt = () => {
       <section>
         <ul>
         {selectedProject.description.map((line) => (
+            <>
+            {/* <br></br>             */}
             <li className="descBullets">{line}</li>
+            </>
         ))}
         </ul>
       </section>

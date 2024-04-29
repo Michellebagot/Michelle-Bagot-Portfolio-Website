@@ -1,39 +1,43 @@
 import { Link } from "react-router-dom";
 import "./navigationBar.css";
 
-//TODO unsure on headshot in header bar here.
-//TODO links need adding in
-
 const NavBar = () => {
   return (
     <div className="header-card">
       <div className="header-content">
-        <Link to={'/'}>
+        <Link to={"/"}>
           <span>
-
-        <h1>Michelle Bagot</h1>
-        <h2>Junior Software Developer</h2>
+            <h1>Michelle Bagot</h1>
+            <h2>Junior Software Developer</h2>
           </span>
         </Link>
       </div>
-      <div className="header-nav">
+      <section className="header-nav">
         <nav>
           <ul>
             <li>
-              <a href="about-me">About Me</a>
+              <Link to="/about-me" className="menuLink">
+                <p>About Me</p>
+              </Link>
             </li>
             <li>
-              <a href="projects">Projects</a>
+              <Link to="/projects" className="menuLink">
+                <p>Projects</p>
+              </Link>
             </li>
             <li>
-              <a href="resume">Resume</a>
+              <Link to="/resume" className="menuLink">
+                <p>Resume</p>
+              </Link>
             </li>
             <li>
-              <a href="contact">Contact</a>
+              <Link to="/contact" className="menuLink">
+                <p>Contact</p>
+              </Link>
             </li>
           </ul>
         </nav>
-      </div>
+      </section>
     </div>
   );
 };

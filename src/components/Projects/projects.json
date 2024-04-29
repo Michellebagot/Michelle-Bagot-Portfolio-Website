@@ -38,7 +38,7 @@
       "name": "Github",
       "icon" : "../icons/github.svg"
     }],
-      "skills" : ["Data Sorting & Filtering", "Agile Methodologies", "Mobile Platform Development", "Component-Based Architecture", "Authentication", "Maps", "Geolocation"],
+      "skills" : ["Data Sorting & Filtering", "Agile Methodologies", "Mobile Platform Development", "Component-Based Architecture", "Authentication", "Map Integration", "Geolocation"],
       "githubLink": "https://github.com/Michellebagot/GoTrail",
       "demoLink" : "https://northcoders.com/project-phase/gotrail"
     },
