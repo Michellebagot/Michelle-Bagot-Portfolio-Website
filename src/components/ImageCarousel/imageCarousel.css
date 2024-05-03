@@ -1,0 +1,8 @@
+.screenshotImg {
+    display: flex;
+    height: 500px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}

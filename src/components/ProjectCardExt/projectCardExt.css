@@ -78,7 +78,7 @@ hr {
   background-color: #d30c7b;
 }
 
-.x {
+.skillTags {
   color: #0d1b2a;
   border-radius: 50px 0 0 50px;
   border-right: solid #d30c7b 10px;
@@ -93,4 +93,8 @@ hr {
   align-items: center;
 
   background-color: white;
+}
+
+p {
+  line-height: 125% ;
 }

@@ -1,5 +1,6 @@
 {
   "name": "michellebagot-website",
+  "homepage": "https://michellebagot.co.uk",
   "private": false,
   "version": "0.0.0",
   "type": "module",
@@ -13,9 +14,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-fonts": "^1.2.1",
+    "react-image-gallery": "^1.3.0",
     "react-router": "^6.22.3",
     "react-router-dom": "^6.22.3",
-    "react-social-icons": "^6.16.0"
+    "react-social-icons": "^6.16.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",

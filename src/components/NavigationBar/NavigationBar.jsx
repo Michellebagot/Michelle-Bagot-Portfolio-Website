@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <div className="header-card">
       <Header />
-      <hr></hr>
+      <hr />
       <Menu />
     </div>
   );
