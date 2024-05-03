@@ -3,7 +3,7 @@ import projects from "../Projects/projects.json";
 import { useState } from "react";
 import "./projectCardExt.css";
 import { Link } from "react-router-dom";
-import ImageCarousel from "../ImageCarousel/ImageCarousel";
+
 
 
 const ProjectCardExt = () => {
@@ -52,9 +52,7 @@ const ProjectCardExt = () => {
       </Link>
 
 <h3>Screenshots</h3>
-<section>
- <ImageCarousel images={selectedProject.screenShots}></ImageCarousel>
-</section>
+
 
       <h3>Development Stack</h3>
       <section className="gridContainer">

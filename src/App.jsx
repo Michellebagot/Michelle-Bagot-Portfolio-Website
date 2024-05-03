@@ -7,8 +7,8 @@ import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import ProjectCardExt from "./components/ProjectCardExt/ProjectCardExt";
 import ComingSoon from "./components/ComingSoon/ComingSoon";
-import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 import Resume from "./components/Resume/Resume";
+import ContactMe from "./components/ContactMe/ContactMe";
 
 function App() {
   return (
@@ -18,11 +18,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-me" element={<ComingSoon />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/:project_name" element={<ProjectCardExt />} />
-        <Route path="/contact" element={<ComingSoon />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path='/images'  element={<ImageCarousel />} />
+        <Route path="/my-projects" element={<Projects />} />
+        <Route path="/my-projects/:project_name" element={<ProjectCardExt />} />
+        <Route path="/contact-me" element={<ContactMe />} />
+        <Route path="/my-resume" element={<Resume />} />
+
       </Routes>
 
       <Footer className="footerComponent" />
