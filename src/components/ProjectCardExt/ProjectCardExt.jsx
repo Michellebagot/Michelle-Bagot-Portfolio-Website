@@ -3,8 +3,7 @@ import projects from "../Projects/projects.json";
 import { useState } from "react";
 import "./projectCardExt.css";
 import { Link } from "react-router-dom";
-
-
+import ScreenshotsCarousel from "../ScreenshotsCarousel/ScreenshotsCarousel";
 
 const ProjectCardExt = () => {
   const { project_name } = useParams();
@@ -13,16 +12,18 @@ const ProjectCardExt = () => {
     projects.find((project) => project.urlTitle === project_name) || {}
   );
 
+console.log(selectedProject)
+
   return (
     <section className="cardContainer">
       <h2>{selectedProject.title}</h2>
-   
+
       <h3>{selectedProject.duration}</h3>
       <h3>{selectedProject.type} </h3>
 
       <p>{selectedProject.description}</p>
 
-<h3>Project Links</h3>
+      <h3>Project Links</h3>
       <Link
         to={selectedProject.githubLink}
         target="_blank"
@@ -51,8 +52,9 @@ const ProjectCardExt = () => {
         View the Project
       </Link>
 
-<h3>Screenshots</h3>
-
+      <h3>Screenshots</h3>
+      <p>Click on the image to enlarge</p>
+      <ScreenshotsCarousel screenshots={selectedProject.screenshots} />
 
       <h3>Development Stack</h3>
       <section className="gridContainer">
@@ -83,7 +85,7 @@ const ProjectCardExt = () => {
       <section>
         <h3>Skills Utilised & Developed</h3>
 
-        <section className="gridContainerx">
+        <section>
           {selectedProject.skills.map((skill) => (
             <div className="skillTags" key={skill}>
               <p>{skill}</p>

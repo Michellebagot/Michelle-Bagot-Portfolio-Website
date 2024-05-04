@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
         <p>{project.abstract}</p>
 
         <section>
-          <Link to={`/projects/${project.urlTitle}`} key={project.title} className="linkButton">
+          <Link to={`/my-projects/${project.urlTitle}`} key={project.title} className="linkButton">
             <img
               className="githubLogo"
               src="../icons/stack.svg"

@@ -1,19 +1,26 @@
-import './contactMe.css'
+import "./contactMe.css";
 
 const ContactMe = () => {
-  
-    return (
-     
-        <>
-        <section className="cardContainer">
-
+  return (
+    <>
+      <section className="cardContainer">
         <h2>Contact Me</h2>
-        <p>The best method to contact me is via email.</p>
+        <p>Lets make something epic together!</p>
 
-        <p>hi@michellebagot.co.uk</p>
-        </section>
-        </>
+        <a
+          href={`mailto:hi@michellebagot.co.uk?subject=I want to make something epic with you`}
+        >
+          hi@michellebagot.co.uk
+        </a>
 
-    );
-  };
-  export default ContactMe;
+        <p>
+          Psss! You can also contact me on{" "}
+          <a href="https://www.linkedin.com/in/michellebagot" target="_blank">
+            LinkedIn
+          </a>
+        </p>
+      </section>
+    </>
+  );
+};
+export default ContactMe;

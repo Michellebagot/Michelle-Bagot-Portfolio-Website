@@ -1,6 +1,9 @@
 .menu-nav {
     margin-top: -10px;
     margin-bottom: -15px;
+    margin-left: 5%;
+    margin-right: 5%;
+  
 }
 
 .menu-ul {
@@ -17,7 +20,9 @@
     padding-left: 10px;
     
 }
-
+/* 
 .menu-link:hover {
-    color: #d30c7b 
-}
+    color: #d30c7b;
+    font-weight: 900;
+
+} */
