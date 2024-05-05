@@ -1,5 +1,13 @@
 .carousel-image {
-    height: 300px;
+  max-height: 300px; /* Existing max-height for all screens */
+  object-fit: cover; 
+}
+
+@media (max-width: 768px) { /* Change breakpoint as needed */
+  .carousel-image {
+    max-width: 250px;
+    object-fit: cover;
+  }
 }
 
 .screenshot-carousel {
