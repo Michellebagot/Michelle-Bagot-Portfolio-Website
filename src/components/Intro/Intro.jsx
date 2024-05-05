@@ -33,18 +33,20 @@ const Intro = () => {
   return (
     <>
       <div className="introCardContainer">
-        <div className="headshotDiv">
-          <img
-            src="./assets/MB-headshot.jpg"
-            alt="Michelle Bagot Headshot"
-            className="headshotImg"
-          />
-        </div>
-        <div className="introTextDiv">
+        <div className="containerForFlex">  
+          <div className="headshotDiv">
+            <img
+              src="./assets/MB-headshot.jpg"
+              alt="Michelle Bagot Headshot"
+              className="headshotImg"
+            />
+          </div>
+          <div className="introTextDiv">
             <h2>Hey!</h2>
-          <p className="inlineParagraph">I'm Michelle, {adjectiveState}</p>
-          <p>Explore my projects to see how I develop software solutions that streamline workflows and empower users.</p>
-          <p>I'd love to work with you on your next project, so get in touch and lets chat about how I can help you create something amazing!</p>
+            <p className="inlineParagraph">I'm Michelle, {adjectiveState}</p>
+            <p>Explore my projects to see how I develop software solutions that streamline workflows and empower users.</p>
+            <p>I'd love to work with you on your next project, so get in touch and lets chat about how I can help you create something amazing!</p>
+          </div>
         </div>
       </div>
     </>
