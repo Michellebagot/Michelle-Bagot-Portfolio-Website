@@ -9,15 +9,17 @@ import ProjectCardExt from "./components/ProjectCardExt/ProjectCardExt";
 import ComingSoon from "./components/ComingSoon/ComingSoon";
 import Resume from "./components/Resume/Resume";
 import ContactMe from "./components/ContactMe/ContactMe";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <>
       <NavBar />
 
+      
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about-me" element={<ComingSoon />} />
+        <Route path="/about-me" element={<AboutMe />} />
         <Route path="/my-projects" element={<Projects />} />
         <Route path="/my-projects/:project_name" element={<ProjectCardExt />} />
         <Route path="/contact-me" element={<ContactMe />} />

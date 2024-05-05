@@ -12,14 +12,12 @@ const ProjectCardExt = () => {
     projects.find((project) => project.urlTitle === project_name) || {}
   );
 
-console.log(selectedProject)
-
   return (
     <section className="cardContainer">
       <h2>{selectedProject.title}</h2>
 
-      <h3>{selectedProject.duration}</h3>
-      <h3>{selectedProject.type} </h3>
+      <h4>{selectedProject.duration}</h4>
+      <h4>{selectedProject.type} </h4>
 
       <p>{selectedProject.description}</p>
 
