@@ -1,0 +1,85 @@
+{
+    "workExperience": [
+      {
+        "company": "Northcoders",
+        "title": "Trainee Software Developer",
+        "startMonth" : "January",
+        "startDate": 2024,
+        "endMonth" : "April", 
+        "endDate": 2024,
+        "description": "A 13-week intensive course focused on full-stack software development. Developed proficiency in core programming languages and frameworks, building a strong foundation for a career in software development through hands-on projects, mentorship, and industry collaboration."
+      },
+      {
+        "company": "Happy Deer Ltd",
+        "title": "Graphic Designer",
+        "startMonth" : "",
+        "startDate": 2020,
+        "endMonth" : "January",
+        "endDate": 2024,
+        "description": "Increased local sports competition engagement through impactful posters and flyers. Designed engaging instructional materials for a local sports club, contributing to higher retention of members."
+      },
+      {
+        "company": "Big Bang Sports",
+        "title": "Sports Coach",
+        "startMonth" : "",
+        "startDate": 2012,
+        "endMonth" : "",
+        "endDate": 2020,
+        "description": "Delivered shooting sports coaching to individuals and teams. Designed and led training sessions and development programs, fostering improved skills and passion for the sport in athletes. Helped athletes achieve personal best scores and win competitions."
+      },
+      {
+        "company": "Team GB/We are England",
+        "title": "Athlete",
+        "startMonth" : "",
+        "startDate": 2009,
+        "endMonth" : "",
+        "endDate": 2012,
+        "description": "Competed at the highest level in Olympic rifle shooting, representing Team GB/We are England in major international events. Achieved podium finishes at the 2010 New Delhi Commonwealth Games and in two European Championships."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Northcoders",
+        "qualificationType" : "Bootcamp",
+        "subject": "Software Development Bootcamp",
+        "startDate": "January 2024",
+        "endDate": "April 2024"
+        ,
+        "grade": "Pass / Certificate of Completion"
+      },
+      {
+        "institution": "Coursera",
+        "qualificationType" : "Coursera Specialisation",
+        "subject": "Google UX Certification",
+        "startDate": 2022,
+        "endDate": 2023
+        ,
+        "grade": "Pass / Certificate of Completion"
+      },
+      {
+        "institution": "Coursera",
+        "qualificationType" : "Coursera Specialisation",
+        "subject": "CalArts Graphic Design",
+        "startDate": 2022,
+        "endDate": 2022 ,
+        "grade": "Pass / Certificate of Completion"
+      },
+      {
+        "institution": "University of Central Lancashire",
+        "qualificationType" : "Bachelors Degree",
+        "subject": "BA (Hons) Sport (Coaching)",
+        "startDate": 2016,
+        "endDate": 2017,
+        "grade": "Upper Second Class (2:1)"
+      },
+      {
+        "institution": "Teesside University via Bradford College",
+        "qualificationType" : "Foundation Degree",
+        "subject": "FdSc Sports Coaching",
+        "startDate": 2014,
+        "endDate": 2016,
+        "grade": "Distinction"
+      }
+    ]
+  }
+  

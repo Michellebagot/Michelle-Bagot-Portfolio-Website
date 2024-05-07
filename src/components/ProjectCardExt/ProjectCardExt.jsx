@@ -1,8 +1,8 @@
-import { useParams } from "react-router";
-import projects from "../Projects/projects.json";
 import { useState } from "react";
-import "./projectCardExt.css";
+import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import "./projectCardExt.css";
+import projects from "../../data/projects.json";
 import ScreenshotsCarousel from "../ScreenshotsCarousel/ScreenshotsCarousel";
 
 const ProjectCardExt = () => {

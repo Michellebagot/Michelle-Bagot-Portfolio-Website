@@ -1,0 +1,199 @@
+[
+    {
+      "id" : 3,
+      "title": "GoTrail",
+      "urlTitle" : "GoTrail",
+      "type" : "Multiplatform Mobile App",
+      "duration": "Mar - Apr 2024",
+      "abstract" : "This collaborative mobile app project merged real-time GPS tracking with gamification features to create an engaging hiking experience, utilising Flutter for development and Firebase for backend services.",
+      "description": 
+        "Successfully collaborated on a mobile app project, merging hiking tracking with engaging gamification features.  Demonstrated proficiency in Flutter and Firebase technologies. Effectively integrated map functionalities, GPS tracking, and robust user authentication systems to deliver a smooth and immersive user experience. Operated within an agile framework, ensuring effective collaboration and project progression."
+      ,
+      "obstacles" : "Overcame a steep learning curve in Flutter & Firebase through collaborative learning (tutorials & pair programming). Faced an issue with accessing trail databases resulting in us securing a curated set of trail data via manual import",
+      "languages" : [ {
+        "name": "Flutter",
+        "icon" : "../icons/flutter.svg"
+      },
+      {
+        "name": "Dart",
+        "icon" : "../icons/dart.svg"
+      },
+      {
+        "name": "Firebase",
+        "icon" : "../icons/firebase.svg"
+      }
+    ],
+    "tools" : [  {
+      "name": "VS Code",
+      "icon" : "../icons/vscode.svg"
+    },
+    {
+      "name": "Slack",
+      "icon" : "../icons/slack.svg"
+    },
+    {
+      "name": "Github",
+      "icon" : "../icons/github.svg"
+    }, 
+    {
+      "name": "Trello",
+      "icon" : "../icons/trello.svg"
+    }
+  ],
+      "skills" : ["Data Sorting & Filtering", "Agile Methodologies", "Mobile Platform Development", "Component-Based Architecture", "Authentication", "Map Integration", "Geolocation"],
+      "githubLink": "https://github.com/Michellebagot/GoTrail",
+      "demoLink" : "https://northcoders.com/project-phase/gotrail",
+      "screenshots" : [
+        "../projectImages/GoTrail/GoTrail1.png",
+        "../projectImages/GoTrail/GoTrail2.png",
+        "../projectImages/GoTrail/GoTrail3.png",
+        "../projectImages/GoTrail/GoTrail4.png",
+        "../projectImages/GoTrail/GoTrail5.png",
+        "../projectImages/GoTrail/GoTrail6.png",
+        "../projectImages/GoTrail/GoTrail7.png",
+        "../projectImages/GoTrail/GoTrail8.png",
+        "../projectImages/GoTrail/GoTrail9.png",
+        "../projectImages/GoTrail/GoTrail10.png",
+        "../projectImages/GoTrail/GoTrail11.png",
+        "../projectImages/GoTrail/GoTrail12.png",
+        "../projectImages/GoTrail/GoTrail13.png"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Northcoders News Front-End Project",
+      "urlTitle": "Northcoders-News-Front-End",
+      "duration": "Mar 2024",
+      "abstract": "This project built a Reddit-inspired SPA using React, featuring article display, voting, commenting, data sorting/filtering, and Netlify deployment.",
+      "description": "Successfully developed a React.js single-page application (SPA) front-end for a news app replicating Reddit’s functionality, utilising URL endpoints for routing. Implemented functionalities for article display, voting (up/down), and commenting, ensuring a smooth user interaction flow. Effectively handled complex data sorting and filtering received from the backend API, overcoming obstacles in direct API sorting. Leveraged React's component-based architecture to maintain code organisation and reusability. Deployed the application to Netlify to demonstrate the application and its functionality.",
+      "obstacles": "Direct API sorting caused the biggest obstacle for this project however with some refactoring as well as trial and error, the problems faced were resolved",
+      "languages": [
+        {
+          "name": "HTML",
+          "icon": "../icons/html5.svg"
+        },
+        {
+          "name": "CSS",
+          "icon": "../icons/css3.svg"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "../icons/javascript.svg"
+        },
+        {
+          "name": "React",
+          "icon": "../icons/react.svg"
+        },
+        {
+          "name": "Axios",
+          "icon": "../icons/axios.svg"
+        }
+      ],
+      "tools": [
+        {
+          "name": "VS Code",
+          "icon": "../icons/vscode.svg"
+        },
+        {
+          "name": "Git",
+          "icon": "../icons/git.svg"
+        },
+        {
+          "name": "Github",
+          "icon": "../icons/github.svg"
+        },
+        {
+          "name": "Netlify",
+          "icon": "../icons/netlify.svg"
+        },
+        {
+          "name": "Lighthouse",
+          "icon": "../icons/lighthouse.svg"
+        }
+      ],
+      "skills": [
+        "Routing",
+        "API integration",
+        "Data Sorting & Filtering",
+        "Single-Page Application (SPA)",
+        "Component-Based Architecture"
+      ],
+      "githubLink": "https://github.com/Michellebagot/Northcoder-News-Front-End",
+      "demoLink": "https://michelle-bagot-nc-news.netlify.app/"  ,
+      "screenshots" : [
+        "../projectImages/NorthcodersNewsFrontEnd/NorthcodersNewsFrontEnd1.png",
+        "../projectImages/NorthcodersNewsFrontEnd/NorthcodersNewsFrontEnd2.png",
+        "../projectImages/NorthcodersNewsFrontEnd/NorthcodersNewsFrontEnd3.png",
+        "../projectImages/NorthcodersNewsFrontEnd/NorthcodersNewsFrontEnd4.png",
+        "../projectImages/NorthcodersNewsFrontEnd/NorthcodersNewsFrontEnd5.png",
+        "../projectImages/NorthcodersNewsFrontEnd/NorthcodersNewsFrontEnd6.png"
+      ] 
+    },
+    
+    {
+      "id": 1,
+      "title": "Northcoders News Back-End Project",
+      "urlTitle": "Northcoders-News-Back-End",
+      "duration": "Feb 2024",
+      "abstract": "This project built a RESTful API with Node.js, Express, and PostgreSQL for a news app, implementing CRUD operations, TDD, Git, and overcoming environment variable challenges during deployment.",
+      "description": "Successfully built a RESTful API in JavaScript replicating a news app backend, utilising Node.js, Express.js, and PostgreSQL. Implemented CRUD operations for articles and comments whilst using best practices like TDD (Test Driven Development) and version control with Git. Successfully hosted the application for public access, gaining valuable experience in deployment. Learned to handle complex queries through effective data manipulation and filtering techniques. Encountered obstacles within environment variables requiring collaboration to effectively resolve.",
+      "obstacles": "The obstacles encountered during this project related to environment variables which, after some collaboration with my mentor and referencing documentaction, we overcame the problem.",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "icon": "../icons/javascript.svg"
+        },
+        {
+          "name": "Node.js",
+          "icon": "../icons/nodejs.svg"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "../icons/postgresql.svg"
+        },
+        {
+          "name": "Express.js",
+          "icon": "../icons/express.svg"
+        }
+      ],
+      "tools": [
+        {
+          "name": "VS Code",
+          "icon": "../icons/vscode.svg"
+        },
+        {
+          "name": "Git",
+          "icon": "../icons/git.svg"
+        },
+        {
+          "name": "Github",
+          "icon": "../icons/github.svg"
+        },
+        {
+          "name": "Jest", 
+          "icon": "../icons/jest.svg"
+        }
+      ],
+      "skills": [
+        "Routing",
+        "RESTful API Design",
+        "CRUD Operations",
+        "Test Driven Development (TDD)",
+        "Version Control (Git)",
+        "Database Queries",
+        "Deployment",
+        "Data Manipulation & Filtering"
+      ],
+      "githubLink": "https://github.com/Michellebagot/Northcoder-News-Back-End",  
+      "demoLink": "https://nc-wk7-nc-news.onrender.com/api/"  ,
+      "screenshots" : [
+        "../projectImages/NorthcodersNewsBackEnd/NorthcodersNewsBackEnd1.png",
+        "../projectImages/NorthcodersNewsBackEnd/NorthcodersNewsBackEnd2.png",
+        "../projectImages/NorthcodersNewsBackEnd/NorthcodersNewsBackEnd3.png",
+        "../projectImages/NorthcodersNewsBackEnd/NorthcodersNewsBackEnd4.png",
+        "../projectImages/NorthcodersNewsBackEnd/NorthcodersNewsBackEnd5.png"
+      ] 
+    }
+    
+    
+  ]

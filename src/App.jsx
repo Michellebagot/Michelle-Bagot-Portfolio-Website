@@ -6,12 +6,13 @@ import NavBar from "./components/NavigationBar/NavigationBar";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import ProjectCardExt from "./components/ProjectCardExt/ProjectCardExt";
-import ComingSoon from "./components/ComingSoon/ComingSoon";
 import Resume from "./components/Resume/Resume";
 import ContactMe from "./components/ContactMe/ContactMe";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
+
+
+
   return (
     <>
       <NavBar />

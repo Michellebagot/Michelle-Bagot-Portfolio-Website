@@ -2,7 +2,7 @@ import './resumeCardEducation.css'
 
 const ResumeCardEducation = ({school}) => {
 
-
+console.log(school)
     return(
         <section className='cardContainer'>
         <h3>{school.institution} - {school.subject}</h3>

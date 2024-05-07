@@ -1,4 +1,4 @@
-import techData from "./techStack.json";
+import techData from "../../data/techStack.json";
 import "./techStack.css";
 
 const TechStack = () => {

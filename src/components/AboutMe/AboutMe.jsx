@@ -2,6 +2,7 @@ import './aboutMe.css'
 
 import TechStack from "../TechStack/TechStack"
 
+
 const AboutMe = () => {
 
     return(

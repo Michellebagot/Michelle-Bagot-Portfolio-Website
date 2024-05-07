@@ -1,4 +1,4 @@
-import projectDataImport from "./projects.json";
+import projectDataImport from "../../data/projects.json";
 import "./projects.css";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import { useState, useEffect } from "react";

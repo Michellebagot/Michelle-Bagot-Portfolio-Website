@@ -1,6 +1,6 @@
 import ResumeCardEducation from "../ResumeCardEducation/ResumeCardEducation";
 import ResumeCardWork from "../ResumeCardWork/ResumeCardWork";
-import resumeData from "./resume.json";
+import resumeData from "../../data/resume.json";
 
 const Resume = () => {
   return (

@@ -1,0 +1,86 @@
+[
+    {
+      "title": "Front-End Development",
+      "skills": [
+        {
+          "name": "HTML",
+          "icon" : "../icons/html5.svg"
+        },
+        {
+          "name": "CSS",
+          "icon" : "../icons/css3.svg"
+        },
+        {
+          "name": "JavaScript",
+          "icon" : "../icons/javascript.svg"
+        },
+        {
+          "name": "React",
+          "icon" : "../icons/react.svg"
+        },
+        {
+            "name": "Axios",
+            "icon" : "../icons/axios.svg"
+          },
+          {
+            "name": "Flutter",
+            "icon" : "../icons/flutter.svg"
+          }
+      ]
+    },
+    {
+      "title": "Back-End Development",
+      "skills": [
+        {
+          "name": "Node.js",
+          "icon" : "../icons/nodejs.svg"
+        },
+        {
+          "name": "npm",
+          "icon" : "../icons/npm.svg"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon" : "../icons/postgresql.svg"
+        },
+        {
+            "name": "Express",
+            "icon" : "../icons/express.svg"
+          },
+          {
+            "name": "Firebase",
+            "icon" : "../icons/firebase.svg"
+          }
+      ]
+    },
+    {
+        "title": "Development Tools",
+        "skills": [
+          {
+            "name": "Jest",
+            "icon" : "../icons/jest.svg"
+          },
+          {
+            "name": "Git",
+            "icon" : "../icons/git.svg"
+          },
+          {
+            "name": "GitHub",
+            "icon" : "../icons/github.svg"
+          },
+          {
+            "name": "Figma",
+            "icon" : "../icons/figma.svg"
+          },
+          {
+            "name": "VSCode",
+            "icon" : "../icons/vscode.svg"
+          },
+          {
+            "name": "Postman",
+            "icon" : "../icons/postman.svg"
+          }
+        ]
+      }
+  ]
+  
