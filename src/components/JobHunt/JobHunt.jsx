@@ -1,8 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import './jobHunt.css';
+import React, { useState, useEffect } from "react";
+import "./jobHunt.css";
+import JobHuntCard from "../JobHuntCard/JobHuntCard";
 
 const JobHunt = () => {
   const [jobHuntCards, setJobHuntCards] = useState([]);
+  const [rolesAppliedFor, setRolesAppliedFor] = useState(0);
+  const [rejectedRoles, setRejectedRoles] = useState(0);
+  const [rolesDeemedRejected, setRolesDeemedRejected] = useState(0);
+  const [awaitingInterviewOutcome, setAwaitingInterviewOutcome] = useState(0);
+  const [interviews, setInterviews] = useState(0);
+  const [interviewPercentage, setInterviewPercentage] = useState(0);
+  const [rejectionPercentage, setRejectionPercentage] = useState(0);
+  const [deemedrejectedPercentage, setDeemedRejectedPercentage] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -15,10 +24,11 @@ const JobHunt = () => {
         }
         const jsonData = await response.json();
 
-        // Process and format the parsed Trello JSON data
         const formattedCards = processTrelloData(jsonData);
 
         setJobHuntCards(formattedCards);
+
+        updateJobHuntStats(formattedCards);
       } catch (error) {
         console.error(error);
       }
@@ -28,69 +38,107 @@ const JobHunt = () => {
   }, []);
 
   const processTrelloData = (trelloData) => {
-    const lists = trelloData.lists || {}; // Map list IDs to names
+    const lists = trelloData.lists || {};
 
     const cards = trelloData.cards || [];
     const formattedCards = cards
-      .filter((card) => card.id && card.name && card.idList) // Filter incomplete cards
-      .filter((card) => card.name.includes('-')) // Filter cards without hyphen
+      .filter((card) => card.id && card.name && card.idList)
+      .filter((card) => card.name.includes("-"))
       .map((card) => {
         const listId = card.idList;
-        const listName = lists[listId] || ''; // Get list name or empty string
+        const listName = lists[listId] || "";
 
         let displayListName;
         switch (listId) {
-          case '66129775f6d808e268d22637':
-            displayListName = 'Roles applied for';
+          case "66129775f6d808e268d22637":
+            displayListName = "Roles applied for";
             break;
-          case '66129775f6d808e268d22638':
-            displayListName = 'Rejected';
+          case "66129775f6d808e268d22638":
+            displayListName = "Rejection Received";
             break;
-          case '661e4f9b969b1e6ed68fa6ba':
-            displayListName = 'Deemed Rejected';
+          case "661e4f9b969b1e6ed68fa6ba":
+            displayListName = "Deemed Unsuccessful";
             break;
-          case '66129775f6d808e268d2263d':
-            displayListName = 'Awaiting Interview Outcome';
+          case "66129775f6d808e268d2263d":
+            displayListName = "Awaiting Interview Outcome";
             break;
           default:
-            displayListName = listName || listId; // Use list name or ID if missing
+            displayListName = listName || listId;
         }
 
-        // Extract company and job title
-        const [company, jobTitle] = card.name.split('-', 2); // Split at first hyphen
-
-        // Get labels (assuming labels are stored as an array in the card object)
-        const labels = card.labels || []; // Handle missing labels
+        const [company, jobTitle] = card.name.split("-", 2);
+        const labels = card.labels || [];
 
         return {
-          id: card.idShort || card.id, // Handle potential id variations
-          company: company || '', // Handle missing company name
-          jobTitle: jobTitle || '', // Handle missing job title
+          id: card.idShort || card.id,
+          company: company || "",
+          jobTitle: jobTitle || "",
           list: displayListName,
-          labels, // Include labels array
+          labels,
         };
       });
 
     return formattedCards;
   };
 
+  const updateJobHuntStats = (cards) => {
+    setRolesAppliedFor(cards.length);
+    setRejectedRoles(
+      cards.filter((card) => card.list === "Rejection Received").length
+    );
+    setRolesDeemedRejected(
+      cards.filter((card) => card.list === "Deemed Rejected").length
+    );
+    setAwaitingInterviewOutcome(
+      cards.filter((card) => card.list === "Awaiting Interview Outcome").length
+    );
+    setInterviews(
+      cards.filter((card) =>
+        card.labels.some((label) => label.name === "Interview")
+      ).length
+    );
+  };
+
+  useEffect(() => {
+    if (rolesAppliedFor > 0) {
+      setInterviewPercentage(Math.round((interviews / rolesAppliedFor) * 100));
+      setRejectionPercentage(
+        Math.round((rejectedRoles / rolesAppliedFor) * 100)
+      );
+      setDeemedRejectedPercentage(
+        Math.round((rolesDeemedRejected / rolesAppliedFor) * 100)
+      );
+    } else {
+      setInterviewPercentage(0);
+      setRejectionPercentage(0);
+      setDeemedRejectedPercentage(0)
+    }
+  }, [rolesAppliedFor, interviews, rejectedRoles, rolesDeemedRejected]);
+
   return (
     <>
-      <ul>
-        {jobHuntCards.map((card) => (
-          <li key={card.id}>
-            <p>Company: {card.company}</p>
-            <p>Job Title: {card.jobTitle}</p>
-            <p>List: {card.list}</p>
-            {card.labels.length > 0 && (
-              <p>
-                Labels: {card.labels.map((label) => label.name).join(', ')}
-              </p>
-            )}
-          </li>
-        ))}
-      </ul>
-      <p>This is a job hunting component</p>
+      <section className="jobCardContainer">
+        <h3>My Job Hunt</h3>
+        <p>
+          Since finishing Northcoders Bootcamp on the 5th April, these are the
+          statistics of my post graduation job hunt.
+        </p>
+        <p>Roles Applied For : {rolesAppliedFor} </p>
+        <p>
+          Interviews Attended : {interviews} ({interviewPercentage}%)
+        </p>
+        <p>
+          Rejections Received : {rejectedRoles} ({rejectionPercentage}%)
+        </p>
+        <p>Roles Deemed Unsuccessful : {rolesDeemedRejected} ({deemedrejectedPercentage}%)</p>
+      </section>
+      <section>
+        <ul>
+          {jobHuntCards.map((card) => (
+            <JobHuntCard card={card} key={card.id} />
+          ))}
+        </ul>
+      </section>
     </>
   );
 };
