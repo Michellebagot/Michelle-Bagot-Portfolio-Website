@@ -6,13 +6,15 @@ const JobHuntCard = ({card}) => {
         <>
         <section className='cardContainer'>
 
-              <p>Company: {card.company}</p>
               <p>Job Title: {card.jobTitle}</p>
-              <p>List: {card.list}</p>
+              <p>Application Status: {card.list}</p>
               {card.labels.length > 0 && (
-                  <p>
-                  Labels: {card.labels.map((label) => label.name).join(", ")}
-                </p>
+               <p>
+               When Applied: {card.labels
+                 .filter((label) => label.name.startsWith("Week") || label.name.startsWith("Pre"))
+                 .map((label) => label.name)
+                 .join(", ")}
+             </p>
               )}
               </section>
         </>
