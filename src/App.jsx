@@ -8,6 +8,7 @@ import Projects from "./components/Projects/Projects";
 import ProjectCardExt from "./components/ProjectCardExt/ProjectCardExt";
 import Resume from "./components/Resume/Resume";
 import ContactMe from "./components/ContactMe/ContactMe";
+import JobHunt from "./components/JobHunt/JobHunt";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/my-projects/:project_name" element={<ProjectCardExt />} />
         <Route path="/contact-me" element={<ContactMe />} />
         <Route path="/my-resume" element={<Resume />} />
+        <Route path="/job-hunt" element={<JobHunt />} />
 
       </Routes>
 
