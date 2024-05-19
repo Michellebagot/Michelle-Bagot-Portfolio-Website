@@ -9,6 +9,9 @@ import ProjectCardExt from "./components/ProjectCardExt/ProjectCardExt";
 import Resume from "./components/Resume/Resume";
 import ContactMe from "./components/ContactMe/ContactMe";
 import JobHunt from "./components/JobHunt/JobHunt";
+import Loading from "./components/Loading/Loading";
+import NotFound from "./components/NotFound/NotFound";
+
 
 function App() {
 
@@ -27,6 +30,9 @@ function App() {
         <Route path="/contact-me" element={<ContactMe />} />
         <Route path="/my-resume" element={<Resume />} />
         <Route path="/job-hunt" element={<JobHunt />} />
+        <Route path='/loading' element={<Loading/>} />
+
+        <Route path="*" element={<NotFound />} />
 
       </Routes>
 

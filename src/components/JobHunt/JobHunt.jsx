@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./jobHunt.css";
 import JobHuntCard from "../JobHuntCard/JobHuntCard";
 import { PieChart } from "react-minimal-pie-chart";
+import Loading from "../Loading/Loading";
 
 const JobHunt = () => {
   const [jobHuntCards, setJobHuntCards] = useState([]);
@@ -15,8 +16,10 @@ const JobHunt = () => {
   const [rejectionPercentage, setRejectionPercentage] = useState(0);
   const [deemedrejectedPercentage, setDeemedRejectedPercentage] = useState(0);
   const [awaitingOutcomePercent, setAwaitingOutcomePercent] = useState(0);
+  const [loadingState, setLoadingState] = useState(true);
 
   useEffect(() => {
+    setLoadingState(true);
     const fetchData = async () => {
       try {
         const response = await fetch(
@@ -101,7 +104,7 @@ const JobHunt = () => {
       ).length
     );
   };
-  
+
   useEffect(() => {
     if (rolesAppliedFor > 0) {
       setAwaitingOutcome(rolesAppliedFor - rejectedRoles);
@@ -115,81 +118,91 @@ const JobHunt = () => {
       setAwaitingOutcomePercent(
         Math.round((awaitingOutcome / rolesAppliedFor) * 100)
       );
+      setLoadingState(false);
     } else {
       setInterviewPercentage(0);
       setRejectionPercentage(0);
       setDeemedRejectedPercentage(0);
     }
-  }, [rolesAppliedFor, interviews, rejectedRoles, rolesDeemedRejected, awaitingOutcome]);
+  }, [
+    rolesAppliedFor,
+    interviews,
+    rejectedRoles,
+    rolesDeemedRejected,
+    awaitingOutcome,
+  ]);
 
-  const getColorByText = (text) => {
-    switch (text) {
-      case "Rejections Received":
-        return "#d30c7b";
-      case "Roles Awaiting Outcome":
-        return "#E38627"; 
-      default:
-        return "#ccc"; 
-    }
-  };
-
-  return (
-    <>
-      <section className="jobCardContainer">
-        <h3>My Job Hunt</h3>
-        <p>
-        Fresh from Northcoders Bootcamp (I graduated April 5th), I've been actively pursuing opportunities to leverage my newly acquired skills. Here's a breakdown of my progress so far.
-        </p>
-      </section>
-      <section className="cardContainer">
-      <p>
-          Roles Applied for : {rolesAppliedFor}
-        </p>
-        <div className="textWithColorBox">
+  if (loadingState) {
+    return (
+      <>
+        <section className="jobCardContainer">
+          <h3>My Job Hunt</h3>
           <p>
-            Rejections Received : {rejectedRoles} ({rejectionPercentage}%)
+            Fresh from Northcoders Bootcamp (I graduated April 5th), I've been
+            actively pursuing opportunities to leverage my newly acquired
+            skills. Here's a breakdown of my progress so far.
           </p>
-          <span style={{ backgroundColor: getColorByText("Rejections Received"), width: "15px", margin: '10px' } }>
-            &nbsp;
-          </span>
-        </div>
-        <div className="textWithColorBox">
-          <p>
-            Roles Awaiting Outcome : {awaitingOutcome} ({awaitingOutcomePercent}%)
-          </p>
-          <span style={{ backgroundColor: getColorByText("Roles Awaiting Outcome"), width: "15px", margin: '10px' }}>
-            &nbsp;
-          </span>
-        </div>
-          <p>
-          Interviews Attended : {interviews} ({interviewPercentage}%)
-        </p>
-        <section className="pieChart">
-          <PieChart
-            data={[
-              {
-                name: "Rejection for Applied Roles",
-                value: rejectedRoles,
-                color: "#d30c7b",
-              },
-              {
-                name: "Roles Awaiting An Outcome",
-                value: awaitingOutcome,
-                color: "#E38627",
-              },
-            ]}
-          />
         </section>
-      </section>
-      {/* <section>
+        <Loading />
+      </>
+    );
+  } else {
+    return (
+      <>
+        <section className="jobCardContainer">
+          <h3>My Job Hunt</h3>
+          <p>
+            Fresh from Northcoders Bootcamp (I graduated April 5th), I've been
+            actively pursuing opportunities to leverage my newly acquired
+            skills. Here's a breakdown of my progress so far.
+          </p>
+        </section>
+        <section className="cardContainer">
+          <p>Roles Applied for : {rolesAppliedFor}</p>
+          <div className="textWithColorBox">
+            <p>
+              Rejections Received : {rejectedRoles} ({rejectionPercentage}%)
+            </p>
+            <span className="rejectedRolesBox">&nbsp;</span>
+          </div>
+          <div className="textWithColorBox">
+            <p>
+              Roles Awaiting Outcome : {awaitingOutcome} (
+              {awaitingOutcomePercent}
+              %)
+            </p>
+            <span className="awaitingOutcomeBox">&nbsp;</span>
+          </div>
+          <p>
+            Interviews Attended : {interviews} ({interviewPercentage}%)
+          </p>
+          <section className="pieChart">
+            <PieChart
+              data={[
+                {
+                  name: "Rejection for Applied Roles",
+                  value: rejectedRoles,
+                  color: "#d30c7b",
+                },
+                {
+                  name: "Roles Awaiting An Outcome",
+                  value: awaitingOutcome,
+                  color: "#E38627",
+                },
+              ]}
+            />
+          </section>
+        </section>
+        {/* <section>
         <ul>
-          {jobHuntCards.map((card) => (
-            <JobHuntCard card={card} key={card.id} />
-          ))}
+        {jobHuntCards.map((card) => (
+          <JobHuntCard card={card} key={card.id} />
+        ))}
         </ul>
-      </section> /* */}
-    </>
-  );
+        </section> /* */}
+      </>
+    );
+  }
 };
 
 export default JobHunt;

@@ -1,0 +1,36 @@
+.lost {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px; 
+  background-color: #0d1b2a;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  border-left: #d30c7b solid 10px;
+  display: flex;
+  flex-direction: column;
+    
+  }
+
+.lostBullet {
+  margin-bottom: 10px;
+  text-decoration: dotted;
+}
+
+.linkButton {
+  padding: 10px;
+  color: black;
+  background-color: white;
+  border-radius: 0 50px 50px 0;
+  border-left: #d30c7b solid 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin: 10px;
+  margin-left: 0px;
+}
+

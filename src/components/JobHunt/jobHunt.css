@@ -1,23 +1,39 @@
 .jobCardContainer {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px; 
-    background-color: #0d1b2a;
-    color: white;
-    border-radius: 0 10px 10px 0;
-    border-left: #d30c7b solid 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #0d1b2a;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  border-left: #d30c7b solid 10px;
+}
+
+.pieChart {
+  height: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.textWithColorBox {
+  display: flex;
+  align-items: center;
+}
+
+
+  .rejectedRolesBox {
+    content: "";
+    display: block;
+    width: 15px;
+    background-color: #d30c7b;
+    margin-left: 10px;
   }
 
-  .pieChart {
-    height: 300px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-
-
-  .textWithColorBox {
-    display: flex;
-    align-items: center;
+  .awaitingOutcomeBox {
+    content: "";
+    display: block;
+    width: 15px;
+    background-color: #E38627;
+    margin-left: 10px;
   }
