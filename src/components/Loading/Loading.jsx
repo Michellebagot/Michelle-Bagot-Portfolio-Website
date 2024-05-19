@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import "./loading.css";
 
 const Loading = () => {
-  const [message, setMessage] = useState("Chart Is Loading...");
+  const [message, setMessage] = useState("Charts Are Loading...");
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setMessage(
-        'Chart is still loading... ' +
-        'It should be along shortly.  ' +
-        'Thank you for your patience.'
+        "Charts are still loading... " +
+          "It should be along shortly.  " +
+          "Thank you for your patience."
       );
     }, 2500);
   }, []);

@@ -37,3 +37,76 @@
     background-color: #E38627;
     margin-left: 10px;
   }
+
+
+  .softEngBox {
+    content: "";
+    display: block;
+    width: 15px;
+    background-color: #d30c7b;
+    margin-left: 10px;
+  }
+
+  .softDevBox {
+    content: "";
+    display: block;
+    width: 15px;
+    background-color: #E38627;
+    margin-left: 10px;
+  }
+
+  .fullStackBox {
+    content: "";
+    display: block;
+    width: 15px;
+    background-color: #39A0FF;
+    margin-left: 10px;
+  }
+
+  .frontEndBox {
+    content: "";
+    display: block;
+    width: 15px;
+    background-color: #9D38BD ;
+    margin-left: 10px;
+  }
+  
+  .backEndBox {
+    content: "";
+    display: block;
+    width: 15px;
+    background-color: #FFC107 ;
+    margin-left: 10px;
+  }
+
+  .webDevBox {
+    content: "";
+    display: block;
+    width: 15px;
+    background-color: #28A745;
+    margin-left: 10px;
+  }
+
+  .otherBox {
+    content: "";
+    display: block;
+    width: 15px;
+    background-color: #F9E79F ;
+    margin-left: 10px;
+  }
+
+
+  .keyInfo { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-gap: 1em;
+    align-items: left; 
+    text-align: left; 
+    margin: 0 auto; 
+  }
+  
+  @media only screen and (max-width: 768px) { 
+    .keyInfor {
+      grid-template-columns: 1fr; 
+    }
+  }

@@ -18,6 +18,24 @@ const JobHunt = () => {
   const [awaitingOutcomePercent, setAwaitingOutcomePercent] = useState(0);
   const [loadingState, setLoadingState] = useState(true);
 
+  const [frontendCount, setFrontendCount] = useState(0);
+  const [backendCount, setBackendCount] = useState(0);
+  const [fullStackCount, setFullStackCount] = useState(0);
+  const [webDevCount, setWebDevCount] = useState(0);
+  const [softwareEngineerCount, setSoftwareEngineerCount] = useState(0);
+  const [softwareDeveloperCount, setSoftwareDeveloperCount] = useState(0);
+  const [otherCount, setOtherCount] = useState(0);
+
+  const [frontendPercentage, setFrontendPercentage] = useState(0);
+  const [backendPercentage, setBackendPercentage] = useState(0);
+  const [fullStackPercentage, setFullStackPercentage] = useState(0);
+  const [webDevPercentage, setWebDevPercentage] = useState(0);
+  const [softwareEngineerPercentage, setSoftwareEngineerPercentage] =
+    useState(0);
+  const [softwareDeveloperPercentage, setSoftwareDeveloperPercentage] =
+    useState(0);
+  const [otherPercentage, setOtherPercentage] = useState(0);
+
   useEffect(() => {
     setLoadingState(true);
     const fetchData = async () => {
@@ -103,6 +121,58 @@ const JobHunt = () => {
         card.labels.some((label) => label.name === "Interview")
       ).length
     );
+    const roleCategories = {
+      fullStack: 0,
+      frontend: 0,
+      backend: 0,
+      webDev: 0,
+      softwareEngineer: 0,
+      softwareDeveloper: 0,
+      other: 0,
+    };
+
+    cards.forEach((card) => {
+      const jobTitle = card.jobTitle.toLowerCase();
+      if (jobTitle.includes("full")) {
+        roleCategories.fullStack++;
+      } else if (jobTitle.includes("front")) {
+        roleCategories.frontend++;
+      } else if (jobTitle.includes("back")) {
+        roleCategories.backend++;
+      } else if (jobTitle.includes("web")) {
+        roleCategories.webDev++;
+      } else if (jobTitle.includes("software engineer")) {
+        roleCategories.softwareEngineer++;
+      } else if (jobTitle.includes("software developer")) {
+        roleCategories.softwareDeveloper++;
+      } else {
+        roleCategories.other++;
+      }
+    });
+
+    setRolesAppliedFor(cards.length);
+    setRejectedRoles(
+      cards.filter((card) => card.list === "Rejection Received").length
+    );
+    setRolesDeemedRejected(
+      cards.filter((card) => card.list === "Deemed Unsuccessful").length
+    );
+    setAwaitingInterviewOutcome(
+      cards.filter((card) => card.list === "Awaiting Interview Outcome").length
+    );
+    setInterviews(
+      cards.filter((card) =>
+        card.labels.some((label) => label.name === "Interview")
+      ).length
+    );
+
+    setFrontendCount(roleCategories.frontend);
+    setBackendCount(roleCategories.backend);
+    setFullStackCount(roleCategories.fullStack);
+    setWebDevCount(roleCategories.webDev);
+    setSoftwareEngineerCount(roleCategories.softwareEngineer);
+    setSoftwareDeveloperCount(roleCategories.softwareDeveloper);
+    setOtherCount(roleCategories.other);
   };
 
   useEffect(() => {
@@ -118,6 +188,21 @@ const JobHunt = () => {
       setAwaitingOutcomePercent(
         Math.round((awaitingOutcome / rolesAppliedFor) * 100)
       );
+      setFrontendPercentage(
+        Math.round((frontendCount / rolesAppliedFor) * 100)
+      );
+      setBackendPercentage(Math.round((backendCount / rolesAppliedFor) * 100));
+      setFullStackPercentage(
+        Math.round((fullStackCount / rolesAppliedFor) * 100)
+      );
+      setWebDevPercentage(Math.round((webDevCount / rolesAppliedFor) * 100));
+      setSoftwareEngineerPercentage(
+        Math.round((softwareEngineerCount / rolesAppliedFor) * 100)
+      );
+      setSoftwareDeveloperPercentage(
+        Math.round((softwareDeveloperCount / rolesAppliedFor) * 100)
+      );
+      setOtherPercentage(Math.round((otherCount / rolesAppliedFor) * 100));
       setLoadingState(false);
     } else {
       setInterviewPercentage(0);
@@ -158,24 +243,7 @@ const JobHunt = () => {
           </p>
         </section>
         <section className="cardContainer">
-          <p>Roles Applied for : {rolesAppliedFor}</p>
-          <div className="textWithColorBox">
-            <p>
-              Rejections Received : {rejectedRoles} ({rejectionPercentage}%)
-            </p>
-            <span className="rejectedRolesBox">&nbsp;</span>
-          </div>
-          <div className="textWithColorBox">
-            <p>
-              Roles Awaiting Outcome : {awaitingOutcome} (
-              {awaitingOutcomePercent}
-              %)
-            </p>
-            <span className="awaitingOutcomeBox">&nbsp;</span>
-          </div>
-          <p>
-            Interviews Attended : {interviews} ({interviewPercentage}%)
-          </p>
+          <h3>Overview</h3>
           <section className="pieChart">
             <PieChart
               data={[
@@ -192,14 +260,127 @@ const JobHunt = () => {
               ]}
             />
           </section>
+          <section className="keyInfo">
+          <p>Roles Applied for : {rolesAppliedFor}</p>
+          <p>
+            Interviews Attended : {interviews} ({interviewPercentage}%)
+          </p>
+          <div className="textWithColorBox">
+            <p>
+              Rejections Received : {rejectedRoles} ({rejectionPercentage}%)
+            </p>
+            <span className="rejectedRolesBox">&nbsp;</span>
+          </div>
+          <div className="textWithColorBox">
+            <p>
+              Roles Awaiting Outcome : {awaitingOutcome} (
+              {awaitingOutcomePercent}
+              %)
+            </p>
+            <span className="awaitingOutcomeBox">&nbsp;</span>
+          </div>
+          
+          </section>
         </section>
-        {/* <section>
-        <ul>
-        {jobHuntCards.map((card) => (
-          <JobHuntCard card={card} key={card.id} />
-        ))}
-        </ul>
-        </section> /* */}
+        <section className="cardContainer">
+          <h3>Role Details</h3>
+          <section className="pieChart">
+            <PieChart
+              data={[
+                {
+                  name: "Software Engineering Roles",
+                  value: softwareEngineerCount,
+                  color: "#d30c7b",
+                },
+                {
+                  name: "Software Development Roles",
+                  value: softwareDeveloperCount,
+                  color: "#E38627",
+                },
+                {
+                  name: "Full Stack Roles",
+                  value: fullStackCount,
+                  color: "#39A0FF",
+                },
+                {
+                  name: "Front End Roles",
+                  value: frontendCount,
+                  color: "#9D38BD",
+                },
+                {
+                  name: "Back End Roles",
+                  value: backendCount,
+                  color: "#FFC107",
+                },
+                {
+                  name: "Web Development Roles",
+                  value: webDevCount,
+                  color: "#28A745",
+                },
+                {
+                  name: "Other Roles",
+                  value: otherCount,
+                  color: "#F9E79F",
+                },
+              ]}
+            />
+          </section>
+          <section className="keyInfo">
+          <div className="textWithColorBox" >
+          <p>
+            Software Engineering Roles : {softwareEngineerCount} (
+            {softwareEngineerPercentage}%)
+          </p>
+          <span className="softEngBox">&nbsp;</span>
+          </div>
+          <div className="textWithColorBox">
+            <p>
+              Software Developerment Roles : {softwareDeveloperCount} ({softwareDeveloperPercentage}%)
+            </p>
+            <span className="softDevBox">&nbsp;</span>
+          </div>
+          <div className="textWithColorBox">
+            <p>
+              Full Stack Roles : {fullStackCount} (
+              {fullStackPercentage}
+              %)
+            </p>
+            <span className="fullStackBox">&nbsp;</span>
+            </div>
+            <div className="textWithColorBox">
+            <p>
+              Front End Roles : {frontendCount} (
+              {frontendPercentage}
+              %)
+            </p>
+            <span className="frontEndBox">&nbsp;</span>
+          </div>
+          <div className="textWithColorBox">
+            <p>
+              Back End Roles : {backendCount} (
+              {backendPercentage}
+              %)
+            </p>
+            <span className="backEndBox">&nbsp;</span>
+          </div>
+          <div className="textWithColorBox">
+            <p>
+              Web Development Roles : {webDevCount} (
+              {webDevPercentage}
+              %)
+            </p>
+            <span className="webDevBox">&nbsp;</span>
+          </div>
+          <div className="textWithColorBox">
+            <p>
+              Other Roles : {otherCount} (
+              {otherPercentage}
+              %)
+            </p>
+            <span className="otherBox">&nbsp;</span>
+          </div>
+          </section>
+        </section>
       </>
     );
   }
