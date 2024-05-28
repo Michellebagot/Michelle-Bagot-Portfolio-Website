@@ -17,7 +17,6 @@ const JobHunt = () => {
   const [deemedrejectedPercentage, setDeemedRejectedPercentage] = useState(0);
   const [awaitingOutcomePercent, setAwaitingOutcomePercent] = useState(0);
   const [loadingState, setLoadingState] = useState(true);
-
   const [frontendCount, setFrontendCount] = useState(0);
   const [backendCount, setBackendCount] = useState(0);
   const [fullStackCount, setFullStackCount] = useState(0);
@@ -25,11 +24,11 @@ const JobHunt = () => {
   const [softwareEngineerCount, setSoftwareEngineerCount] = useState(0);
   const [softwareDeveloperCount, setSoftwareDeveloperCount] = useState(0);
   const [otherCount, setOtherCount] = useState(0);
-
   const [frontendPercentage, setFrontendPercentage] = useState(0);
   const [backendPercentage, setBackendPercentage] = useState(0);
   const [fullStackPercentage, setFullStackPercentage] = useState(0);
   const [webDevPercentage, setWebDevPercentage] = useState(0);
+
   const [softwareEngineerPercentage, setSoftwareEngineerPercentage] =
     useState(0);
   const [softwareDeveloperPercentage, setSoftwareDeveloperPercentage] =
@@ -279,6 +278,15 @@ const JobHunt = () => {
             </p>
             <span className="awaitingOutcomeBox">&nbsp;</span>
           </div>
+          {/* <div className="textWithColorBox">
+            <p>
+              Roles Deemed Unsuccessful : {rolesDeemedRejected} (
+              {deemedrejectedPercentage}
+              %)
+              <br></br>
+              (applied for two weeks or more ago)
+            </p>
+            </div> */}
           
           </section>
         </section>
