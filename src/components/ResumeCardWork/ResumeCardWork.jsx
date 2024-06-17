@@ -1,25 +1,27 @@
-import './resumeCardWork.css'
+import "./resumeCardWork.css";
 
-const ResumeCardWork = ({job}) => {
+const ResumeCardWork = ({ job }) => {
+  return (
+    <section className="cardContainer">
+      <h3>
+        {job.company} - {job.title}
+      </h3>
+      <h4>
+        {job.startMonth} {job.startDate} - {job.endMonth} {job.endDate}
+      </h4>
+      <p>{job.description}</p>
 
-
-    return(
-        <section className='cardContainer'>
-        <h3>{job.company} - {job.title}</h3>
-        <h4>{job.startMonth} {job.startDate} - {job.endMonth} {job.endDate}</h4>
-        <p>{job.description}</p>
-
-        <section className='skillTags'>
+      <section className="skillTags">
         <img
-              className="githubLogo"
-              src="../icons/briefcase.svg"
-              width="25"
-              alt="stack icon"
-            />
+          className="githubLogo"
+          src="../icons/briefcase.svg"
+          width="25"
+          alt="stack icon"
+        />
         <p>Work Experience</p>
-        </section>
-        </section>
-    )
-}
+      </section>
+    </section>
+  );
+};
 
-export default ResumeCardWork
+export default ResumeCardWork;

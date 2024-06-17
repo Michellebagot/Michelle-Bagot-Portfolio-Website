@@ -11,18 +11,12 @@ import ContactMe from "./components/ContactMe/ContactMe";
 import JobHunt from "./components/JobHunt/JobHunt";
 import Loading from "./components/Loading/Loading";
 import NotFound from "./components/NotFound/NotFound";
-import UltimateXO from "./components/UltimateXO/UltimateXO";
-
 
 function App() {
-
-
-
   return (
     <>
       <NavBar />
 
-      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-me" element={<AboutMe />} />
@@ -31,10 +25,9 @@ function App() {
         <Route path="/contact-me" element={<ContactMe />} />
         <Route path="/my-resume" element={<Resume />} />
         <Route path="/job-hunt" element={<JobHunt />} />
-        <Route path='/loading' element={<Loading/>} />
+        <Route path="/loading" element={<Loading />} />
 
         <Route path="*" element={<NotFound />} />
-
       </Routes>
 
       <Footer className="footerComponent" />
