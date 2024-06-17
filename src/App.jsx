@@ -11,6 +11,7 @@ import ContactMe from "./components/ContactMe/ContactMe";
 import JobHunt from "./components/JobHunt/JobHunt";
 import Loading from "./components/Loading/Loading";
 import NotFound from "./components/NotFound/NotFound";
+import UltimateXO from "./components/UltimateXO/UltimateXO";
 
 
 function App() {
