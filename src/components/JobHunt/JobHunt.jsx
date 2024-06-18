@@ -260,34 +260,24 @@ const JobHunt = () => {
             />
           </section>
           <section className="keyInfo">
-          <p>Roles Applied for : {rolesAppliedFor}</p>
-          <p>
-            Interviews Attended : {interviews} ({interviewPercentage}%)
-          </p>
-          <div className="textWithColorBox">
+            <p>Roles Applied for : {rolesAppliedFor}</p>
             <p>
-              Rejections Received : {rejectedRoles} ({rejectionPercentage}%)
+              Interviews Attended : {interviews} ({interviewPercentage}%)
             </p>
-            <span className="rejectedRolesBox">&nbsp;</span>
-          </div>
-          <div className="textWithColorBox">
-            <p>
-              Roles Awaiting Outcome : {awaitingOutcome} (
-              {awaitingOutcomePercent}
-              %)
-            </p>
-            <span className="awaitingOutcomeBox">&nbsp;</span>
-          </div>
-          {/* <div className="textWithColorBox">
-            <p>
-              Roles Deemed Unsuccessful : {rolesDeemedRejected} (
-              {deemedrejectedPercentage}
-              %)
-              <br></br>
-              (applied for two weeks or more ago)
-            </p>
-            </div> */}
-          
+            <div className="textWithColorBox">
+              <p>
+                Rejections Received : {rejectedRoles} ({rejectionPercentage}%)
+              </p>
+              <span className="rejectedRolesBox">&nbsp;</span>
+            </div>
+            <div className="textWithColorBox">
+              <p>
+                Roles Awaiting Outcome : {awaitingOutcome} (
+                {awaitingOutcomePercent}
+                %)
+              </p>
+              <span className="awaitingOutcomeBox">&nbsp;</span>
+            </div>
           </section>
         </section>
         <section className="cardContainer">
@@ -334,59 +324,55 @@ const JobHunt = () => {
             />
           </section>
           <section className="keyInfo">
-          <div className="textWithColorBox" >
-          <p>
-            Software Engineering Roles : {softwareEngineerCount} (
-            {softwareEngineerPercentage}%)
-          </p>
-          <span className="softEngBox">&nbsp;</span>
-          </div>
-          <div className="textWithColorBox">
-            <p>
-              Software Developerment Roles : {softwareDeveloperCount} ({softwareDeveloperPercentage}%)
-            </p>
-            <span className="softDevBox">&nbsp;</span>
-          </div>
-          <div className="textWithColorBox">
-            <p>
-              Full Stack Roles : {fullStackCount} (
-              {fullStackPercentage}
-              %)
-            </p>
-            <span className="fullStackBox">&nbsp;</span>
+            <div className="textWithColorBox">
+              <p>
+                Software Engineering Roles : {softwareEngineerCount} (
+                {softwareEngineerPercentage}%)
+              </p>
+              <span className="softEngBox">&nbsp;</span>
             </div>
             <div className="textWithColorBox">
-            <p>
-              Front End Roles : {frontendCount} (
-              {frontendPercentage}
-              %)
-            </p>
-            <span className="frontEndBox">&nbsp;</span>
-          </div>
-          <div className="textWithColorBox">
-            <p>
-              Back End Roles : {backendCount} (
-              {backendPercentage}
-              %)
-            </p>
-            <span className="backEndBox">&nbsp;</span>
-          </div>
-          <div className="textWithColorBox">
-            <p>
-              Web Development Roles : {webDevCount} (
-              {webDevPercentage}
-              %)
-            </p>
-            <span className="webDevBox">&nbsp;</span>
-          </div>
-          <div className="textWithColorBox">
-            <p>
-              Other Roles : {otherCount} (
-              {otherPercentage}
-              %)
-            </p>
-            <span className="otherBox">&nbsp;</span>
-          </div>
+              <p>
+                Software Developerment Roles : {softwareDeveloperCount} (
+                {softwareDeveloperPercentage}%)
+              </p>
+              <span className="softDevBox">&nbsp;</span>
+            </div>
+            <div className="textWithColorBox">
+              <p>
+                Full Stack Roles : {fullStackCount} ({fullStackPercentage}
+                %)
+              </p>
+              <span className="fullStackBox">&nbsp;</span>
+            </div>
+            <div className="textWithColorBox">
+              <p>
+                Front End Roles : {frontendCount} ({frontendPercentage}
+                %)
+              </p>
+              <span className="frontEndBox">&nbsp;</span>
+            </div>
+            <div className="textWithColorBox">
+              <p>
+                Back End Roles : {backendCount} ({backendPercentage}
+                %)
+              </p>
+              <span className="backEndBox">&nbsp;</span>
+            </div>
+            <div className="textWithColorBox">
+              <p>
+                Web Development Roles : {webDevCount} ({webDevPercentage}
+                %)
+              </p>
+              <span className="webDevBox">&nbsp;</span>
+            </div>
+            <div className="textWithColorBox">
+              <p>
+                Other Roles : {otherCount} ({otherPercentage}
+                %)
+              </p>
+              <span className="otherBox">&nbsp;</span>
+            </div>
           </section>
         </section>
       </>

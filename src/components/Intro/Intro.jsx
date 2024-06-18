@@ -29,11 +29,10 @@ const Intro = () => {
     timeoutFunc();
   }, [adjectiveState]);
 
-
   return (
     <>
       <div className="introCardContainer">
-        <div className="containerForFlex">  
+        <div className="containerForFlex">
           <div className="headshotDiv">
             <img
               src="./assets/MB-headshot.jpg"
@@ -44,8 +43,14 @@ const Intro = () => {
           <div className="introTextDiv">
             <h2>Hey!</h2>
             <p className="inlineParagraph">I'm Michelle, {adjectiveState}</p>
-            <p>Explore my projects to see how I develop software solutions that streamline workflows and empower users.</p>
-            <p>I'd love to work with you on your next project, so get in touch and lets chat about how I can help you create something amazing!</p>
+            <p>
+              Explore my projects to see how I develop software solutions that
+              streamline workflows and empower users.
+            </p>
+            <p>
+              I'd love to work with you on your next project, so get in touch
+              and lets chat about how I can help you create something amazing!
+            </p>
           </div>
         </div>
       </div>

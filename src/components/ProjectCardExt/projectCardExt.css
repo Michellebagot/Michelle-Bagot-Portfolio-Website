@@ -3,15 +3,14 @@ li {
 }
 
 .descBullets {
-    display: flex;
-padding: 10px 10px 10px 0
+  display: flex;
+  padding: 10px 10px 10px 0;
 }
 
 ul {
   list-style-position: inside;
   padding-left: 0;
 }
-
 
 .cardContainer {
   margin-top: 10px;
@@ -96,5 +95,5 @@ hr {
 }
 
 p {
-  line-height: 125% ;
+  line-height: 125%;
 }

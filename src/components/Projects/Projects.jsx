@@ -4,13 +4,12 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 import { useState, useEffect } from "react";
 
 const Projects = () => {
+  const [projectData, setProjectData] = useState(projectDataImport);
 
-const [projectData, setProjectData] = useState(projectDataImport)
-
-useEffect(() => {
-  const sortedData = [...projectData].sort((b, a) => a.id - b.id);
-  setProjectData(sortedData);
-}, []); 
+  useEffect(() => {
+    const sortedData = [...projectData].sort((b, a) => a.id - b.id);
+    setProjectData(sortedData);
+  }, []);
 
   return (
     <>

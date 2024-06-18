@@ -1,19 +1,17 @@
-import { Link } from 'react-router-dom'
-import './projectHeader.css'
-
+import { Link } from "react-router-dom";
+import "./projectHeader.css";
 
 const ProjectHeader = () => {
-
-    return (
-        <>
-         <Link to={`/my-projects/`}>
-        <section className='projectCardContainer'>
-            <h2>Projects</h2>
-            <p>Explore my projects</p>
+  return (
+    <>
+      <Link to={`/my-projects/`}>
+        <section className="projectCardContainer">
+          <h2>Projects</h2>
+          <p>Explore my projects</p>
         </section>
-        </Link>
-        </>
-    )
-}
+      </Link>
+    </>
+  );
+};
 
-export default ProjectHeader
+export default ProjectHeader;

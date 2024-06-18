@@ -2,17 +2,16 @@ import AboutMeHeader from "../AboutMeHeader/AboutMeHeader";
 import Intro from "../Intro/Intro";
 import ProjectHeader from "../ProjectHeader/ProjectHeader";
 import ResumeHeader from "../ResumeHeader/ResumeHeader";
-import './home.css'
+import "./home.css";
 
 const Home = () => {
-
-  const projectHeader = './assets/project-header.png'
+  const projectHeader = "./assets/project-header.png";
   return (
     <>
-      <Intro/>
+      <Intro />
       <AboutMeHeader />
-    <ProjectHeader />
- <ResumeHeader />
+      <ProjectHeader />
+      <ResumeHeader />
     </>
   );
 };
