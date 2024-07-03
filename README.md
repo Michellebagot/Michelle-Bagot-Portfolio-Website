@@ -31,13 +31,13 @@ Welcome to my personal portfolio website! This site serves as a showcase of my p
 Open http://localhost:3000 to view it in the browser.
 
 ## Deployment
-This project is currently manually deployed to michellebagot.co.uk.
+This project is currently manually deployed to https://www.michellebagot.co.uk.
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or create a pull request.
 
 ## Contact
-* GitHub: github.com/michellebagot
-* LinkedIn: linkedin.com/in/michellebagot
+* GitHub: https://www.github.com/michellebagot
+* LinkedIn: https://www.linkedin.com/in/michellebagot
+* Website: https://www.michellebagot.co.uk
 * Email: hi@michellebagot.co.uk
-* Website: michellebagot.co.uk
