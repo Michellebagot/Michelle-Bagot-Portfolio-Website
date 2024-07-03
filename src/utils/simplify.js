@@ -1,20 +1,17 @@
-import yason from 'yason';
-
+import yason from "yason";
 
 function simplify(pathname, stream = process.stdout) {
   const boardData = yason.parse(pathname);
   const boardName = boardData.name;
-  const labels = boardData.labelNames || {}; // Handle missing 'labelNames'
+  const labels = boardData.labelNames || {};
   const lists = {};
   const checklists = {};
   const cards = boardData.cards || [];
 
-  // Extract list IDs and names
   for (const list of boardData.lists) {
     lists[list.id] = list.name;
   }
 
-  // Extract checklists and their items
   for (const checklist of boardData.checklists) {
     checklists[checklist.id] = {
       name: checklist.name,
@@ -25,7 +22,6 @@ function simplify(pathname, stream = process.stdout) {
     };
   }
 
-  // Extract cards and their data
   const formattedCards = cards.map((card) => {
     const cardLabels = card.labels.map((label) => label.name);
     const cardChecklists = card.idChecklists.map((id) => checklists[id]);
@@ -37,7 +33,6 @@ function simplify(pathname, stream = process.stdout) {
     };
   });
 
-  // Assemble the data structure
   const data = {
     type: "board",
     name: boardName,
@@ -52,5 +47,4 @@ function simplify(pathname, stream = process.stdout) {
   yason.stringify(data, stream, { indent: true });
 }
 
-
-export default simplify
+export default simplify;
