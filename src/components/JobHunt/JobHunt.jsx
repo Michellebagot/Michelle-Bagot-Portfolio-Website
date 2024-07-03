@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./jobHunt.css";
-import JobHuntCard from "../JobHuntCard/JobHuntCard";
 import { PieChart } from "react-minimal-pie-chart";
 import Loading from "../Loading/Loading";
 
