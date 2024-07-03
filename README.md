@@ -10,6 +10,7 @@ Welcome to my personal portfolio website! This site serves as a showcase of my p
 - **Cors**: Node.js package for providing a Connect/Express middleware.
 - **React Minimal Pie Chart**: SVG-based pie chart component for React.
 - **React Router**: Declarative routing for React applications.
+- **Yason**: Yet another JSON viewer/parser plugin.
 
 
 ## Getting Started
