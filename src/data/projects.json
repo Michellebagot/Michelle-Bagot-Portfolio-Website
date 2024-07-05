@@ -1,4 +1,68 @@
-[
+[{
+  "id" : 4,
+  "title": "Michelle Bagot - Portfolio Website",
+  "urlTitle" : "Portfolio-Website",
+  "type" : "Website design and development",
+  "duration": "Apr - May 2024",
+  "abstract" : "This website was developed to showcase my skills.  Clean design, clear navigation, and a well-organized portfolio with compelling visuals make it easy for visitors to explore my work. This project solidified my expertise in React development.",
+  "description": 
+"I developed this professional and engaging portfolio website to showcase my skills and experience to potential clients and employers.  The clean design prioritises clear navigation and intuitive user experience, while the meticulously crafted portfolio section utilises an intuitive layout with compelling visuals and detailed descriptions, allowing visitors to grasp the scope and impact of my work. This project solidified my expertise in all aspects of website creation, with a particular focus on reinforcing my React development skills."
+  ,
+  "obstacles" : "As this was my first solo React project, the main obstacle was navigating challenges through in-depth documentation exploration and self-directed problem-solving. This process solidified my understanding of React concepts and fostered a self-sufficient development approach.",
+  "languages": [
+    {
+      "name": "HTML",
+      "icon": "../icons/html5.svg"
+    },
+    {
+      "name": "CSS",
+      "icon": "../icons/css3.svg"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "../icons/javascript.svg"
+    },
+    {
+      "name": "React",
+      "icon": "../icons/react.svg"
+    }
+  ],
+  "tools": [
+    {
+      "name": "VS Code",
+      "icon": "../icons/vscode.svg"
+    },
+    {
+      "name": "Git",
+      "icon": "../icons/git.svg"
+    },
+    {
+      "name": "Github",
+      "icon": "../icons/github.svg"
+    },
+    {
+      "name": "Lighthouse",
+      "icon": "../icons/lighthouse.svg"
+    }
+  ],
+  "skills": [
+    "Routing",
+    "Data Sorting & Filtering",
+    "Single-Page Application (SPA)",
+    "Component-Based Architecture",
+    "User Experience Design"
+  ],
+  "githubLink": "https://github.com/Michellebagot/Michelle-Bagot-Portfolio-Website",
+  "demoLink" : "https://www.michellebagot.co.uk",
+  "screenshots" : [
+    "../projectImages/Portfolio-Website/Portfolio-Website1.PNG",
+    "../projectImages/Portfolio-Website/Portfolio-Website2.PNG",
+    "../projectImages/Portfolio-Website/Portfolio-Website3.PNG",
+    "../projectImages/Portfolio-Website/Portfolio-Website4.PNG",
+    "../projectImages/Portfolio-Website/Portfolio-Website5.PNG",
+    "../projectImages/Portfolio-Website/Portfolio-Website6.PNG"
+  ]
+},
     {
       "id" : 3,
       "title": "GoTrail",
