@@ -182,7 +182,7 @@
         "Single-Page Application (SPA)",
         "Component-Based Architecture"
       ],
-      "githubLink": "https://github.com/Michellebagot/Northcoder-News-Front-End",
+      "githubLink": "https://github.com/Michellebagot/Northcoders-News-Front-End",
       "demoLink": "https://michelle-bagot-nc-news.netlify.app/"  ,
       "screenshots" : [
         "../projectImages/NorthcodersNewsFrontEnd/NorthcodersNewsFrontEnd1.png",
@@ -248,7 +248,7 @@
         "Deployment",
         "Data Manipulation & Filtering"
       ],
-      "githubLink": "https://github.com/Michellebagot/Northcoder-News-Back-End",  
+      "githubLink": "https://github.com/Michellebagot/Northcoders-News-Back-End",  
       "demoLink": "https://nc-wk7-nc-news.onrender.com/api/"  ,
       "screenshots" : [
         "../projectImages/NorthcodersNewsBackEnd/NorthcodersNewsBackEnd1.png",
